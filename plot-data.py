@@ -5,9 +5,10 @@ import pandas as pd
 import numpy as np
 
 # Load the csv
-df1 = pd.read_csv('data/october-through-november.csv')
-df2 = pd.read_csv('data/december-through-april.csv')
-df = df1.append(df2, ignore_index=True)
+df1 = pd.read_csv('data/january-through-september.csv')
+df2 = pd.read_csv('data/october-through-november.csv')
+df3 = pd.read_csv('data/december-through-april.csv')
+df = df1.append(df2, ignore_index=True).append(df3, ignore_index=True)
 
 time_values = []
 interest_values = []
@@ -20,7 +21,7 @@ fig, ax = plt.subplots()
 
 ax.set_title('Interest in Toilet Paper (Google Trends)')
 ax.set_ylabel('Interest')
-ax.plot_date(time_values, interest_values, linestyle='-', marker='.', color='black')
+ax.plot_date(time_values, interest_values, linestyle='', marker=',', color='black')
 
 # For data within the same day.
 #hfmt = mdates.DateFormatter('%H:%M:%S')

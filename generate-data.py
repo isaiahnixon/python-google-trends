@@ -8,22 +8,22 @@ kw_list=['toilet paper']
 
 # Start datetime
 year_start = 2019
-month_start = 10
+month_start = 1
 day_start = 1
 hour_start = 0
 
 # End datetime
 year_end = 2019
-month_end = 11
+month_end = 9
 day_end = 30
 hour_end = 23
 
 # Sleep between calls
 # Note: There should be one call per week of data requested.
-sleep = 80
+sleep = 120
 
 # CSV name
-csv_name = 'october-through-november'
+csv_name = 'january-through-september'
 
 # Establish connection
 pytrend = TrendReq(hl='en-US', tz=360, timeout=(10,25), retries=3, backoff_factor=1)
