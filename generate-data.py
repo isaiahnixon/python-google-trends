@@ -4,26 +4,26 @@ from pytrends.request import TrendReq
 # It can take a long time to run.
 
 # CONFIG
-kw_list=['toilet paper']
+kw_list=['cats']
 
 # Start datetime
-year_start = 2019
+year_start = 2020
 month_start = 1
 day_start = 1
 hour_start = 0
 
 # End datetime
-year_end = 2019
-month_end = 9
+year_end = 2020
+month_end = 4
 day_end = 30
 hour_end = 23
 
 # Sleep between calls
 # Note: There should be one call per week of data requested.
-sleep = 120
+sleep = 6
 
 # CSV name
-csv_name = 'january-through-september'
+csv_name = 'january-through-april-cats'
 
 # Establish connection
 pytrend = TrendReq(hl='en-US', tz=360, timeout=(10,25), retries=3, backoff_factor=1)
