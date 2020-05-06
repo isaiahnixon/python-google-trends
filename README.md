@@ -15,5 +15,5 @@ In this project I will be messing around with data vizualization in Python using
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.tx](LICENSE.txt) file for details
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
 
